@@ -66,7 +66,7 @@ Transform:
   m_Children:
   - {fileID: 2097801267083281267}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2097801267664718161
 SpriteRenderer:
@@ -197,7 +197,7 @@ MonoBehaviour:
   groundRadius: 0.5
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 448
   isGrounded: 0
   animator: {fileID: 0}
   playerAnimationState: 0
