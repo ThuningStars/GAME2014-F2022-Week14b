@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3597989997769721267}
   - component: {fileID: 3597989997769721264}
   - component: {fileID: 3597989997769721265}
+  - component: {fileID: 1929232496}
+  - component: {fileID: 1929232497}
   m_Layer: 5
   m_Name: HealthSystem
   m_TagString: Untagged
@@ -102,6 +104,37 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1929232496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3597989997769721270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46040559bca7c634fa26498fd8c7ccc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    transform: {fileID: 0}
+    offset: {x: 0, y: 0.65}
+    x: 1
+    y: 1
+--- !u!114 &1929232497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3597989997769721270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36ada0f0857aa4498f3a2ed0bcb330a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 0
+  healthBar: {fileID: 0}
 --- !u!1 &3597989998057795096
 GameObject:
   m_ObjectHideFlags: 0
