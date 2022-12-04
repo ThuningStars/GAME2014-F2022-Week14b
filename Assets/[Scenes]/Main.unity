@@ -268,6 +268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 121535769}
   - component: {fileID: 121535770}
+  - component: {fileID: 121535771}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -303,6 +304,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onScreenControls: {fileID: 0}
+  miniMap: {fileID: 0}
+--- !u!114 &121535771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121535768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8963e40122a95342af16d3ec3cce074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   miniMap: {fileID: 0}
 --- !u!1 &161398428
 GameObject:
@@ -1044,7 +1058,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 599823033}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 121535771}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: OnYButton_Pressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &599823033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1101,7 +1127,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &695761968
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18143,7 +18169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1188526683
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18463,7 +18489,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1241436896
 RectTransform:
   m_ObjectHideFlags: 0
