@@ -15,15 +15,17 @@ public class GameController : MonoBehaviour
         onScreenControls.SetActive(Application.isMobilePlatform);
 
         miniMap = GameObject.Find("MiniMap");
-        if(miniMap)
-        {
-            miniMap.SetActive(false);
-        }
+
     }
 
     void Start()
     {
-        //FindObjectOfType<SoundManager>().PlayMusic(Sound.MAIN_MUSIC);
+        FindObjectOfType<SoundManager>().PlayMusic(Sound.MAIN_MUSIC);
+
+        if (miniMap)
+        {
+            miniMap.SetActive(false);
+        }
     }
 
     void Update()
