@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &157949335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 157949336}
+  m_Layer: 9
+  m_Name: BulletSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &157949336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157949335}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.365, y: -0.138, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4162421830059063108}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &669094752
 GameObject:
   m_ObjectHideFlags: 0
@@ -71,7 +102,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1237572951
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8739a006b514a554dbe3080648d1cc47, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
@@ -95,6 +126,7 @@ GameObject:
   - component: {fileID: 1382349755}
   - component: {fileID: 1382349756}
   - component: {fileID: 1382349757}
+  - component: {fileID: 391148250}
   m_Layer: 9
   m_Name: PlayerDetection
   m_TagString: Untagged
@@ -150,6 +182,22 @@ MonoBehaviour:
     m_Bits: 456
   playerDetected: 0
   LOS: 0
+--- !u!114 &391148250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382349754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f21781c039eafb408af129bb1301e2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireDelay: 30
+  bulletSpawn: {fileID: 157949336}
+  bulletPrefab: {fileID: 0}
+  bulletParent: {fileID: 0}
 --- !u!1 &4162421828735917271
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,6 +267,7 @@ Transform:
   - {fileID: 4162421830226261436}
   - {fileID: 1382349755}
   - {fileID: 669094753}
+  - {fileID: 157949336}
   m_Father: {fileID: 0}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -289,7 +289,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &121535770
 MonoBehaviour:
@@ -1127,6 +1127,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599823030}
   m_CullTransparentMesh: 1
+--- !u!1 &673962386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 673962387}
+  m_Layer: 0
+  m_Name: '[BULLETS]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &673962387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673962386}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 49.951454, y: -2.1629934, z: -0.055138927}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &695761967
 GameObject:
   m_ObjectHideFlags: 0
@@ -21876,7 +21907,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2097801267664718162, guid: b4e7b59c20590d74aaba22c521b8b57e, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2097801267664718162, guid: b4e7b59c20590d74aaba22c521b8b57e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22077,7 +22108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3597989997769721266, guid: 1064695859ae0f94e9a7fca6da79d242, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3597989997769721266, guid: 1064695859ae0f94e9a7fca6da79d242, type: 3}
       propertyPath: m_AnchorMax.x
@@ -22305,6 +22336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingPlatform
       objectReference: {fileID: 0}
+    - target: {fileID: 1753865193217230193, guid: 2159f6ff27a913b44acfbf83b5963711, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     - target: {fileID: 1753865193217230195, guid: 2159f6ff27a913b44acfbf83b5963711, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -22366,7 +22401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7152138298218021235, guid: 83d7eca57c4f81049b32492dd4ee2084, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7152138298218021235, guid: 83d7eca57c4f81049b32492dd4ee2084, type: 3}
       propertyPath: m_LocalPosition.x
