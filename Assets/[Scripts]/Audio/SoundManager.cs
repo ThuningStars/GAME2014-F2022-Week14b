@@ -22,9 +22,13 @@ public class SoundManager : MonoBehaviour
     // Update is called once per frame
     private void InitializeSoundFX()
     {
+        // Pre-Load sound_FX
         audioClips.Add(Resources.Load<AudioClip>("Audio/jump-sound"));
         audioClips.Add(Resources.Load<AudioClip>("Audio/hurt-sound"));
         audioClips.Add(Resources.Load<AudioClip>("Audio/death-sound"));
+        audioClips.Add(Resources.Load<AudioClip>("Audio/bullet-sound"));
+
+        // Pre-Load Music
         audioClips.Add(Resources.Load<AudioClip>("Audio/main-soundtrack"));
         audioClips.Add(Resources.Load<AudioClip>("Audio/end-soundtrack"));
     }
