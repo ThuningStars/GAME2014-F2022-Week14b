@@ -16,6 +16,8 @@ public class GameController : MonoBehaviour
 
         miniMap = GameObject.Find("MiniMap");
 
+        BulletManager.Instance().BuildBulletPool();
+
     }
 
     void Start()
