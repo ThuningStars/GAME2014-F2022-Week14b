@@ -39,8 +39,15 @@ public class BulletController : MonoBehaviour
     {
         if(gameObject.activeInHierarchy)
         {
-            Destroy(this.gameObject);
+            BulletManager.Instance().ReturnBullet(this.gameObject);
         }
+    }
+
+    public void ResetAllPhysics()
+    {
+        direction = Vector2.zero;
+        rigidbody2D.velocity = Vector2.zero;
+        rigidbody2D.angularVelocity = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
